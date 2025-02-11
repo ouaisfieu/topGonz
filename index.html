@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation au Carnet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    /* Ajoute ici le CSS mentionné plus haut */
+  </style>
+</head>
+<body>
+  <h1>Bienvenue dans mon carnet numérique</h1>
+  <p>Choisissez votre porte d’entrée :</p>
+  
+  <button onclick="goToTheme('citoyennete')">Citoyenneté</button>
+  <button onclick="goToTheme('empouvoirement')">Empouvoirement</button>
+  <button onclick="goToTheme('numerique')">Transition numérique</button>
+  
+  <script>
+    function goToTheme(theme) {
+      const baseURL = "https://ton-obsidian-publish.com";
+      const urls = {
+        "citoyennete": baseURL + "/citoyennete",
+        "empouvoirement": baseURL + "/empouvoirement",
+        "numerique": baseURL + "/numerique"
+      };
+      window.location.href = urls[theme] || baseURL;
+    }
+  </script>
+</body>
+</html>
