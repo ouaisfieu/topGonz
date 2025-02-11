@@ -5,47 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Invitation au Carnet</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <style>
-      body {
-    background: black;
-    color: #00FF99;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
-  button {
-    background: transparent;
-    border: 2px solid #00FF99;
-    color: #00FF99;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  button:hover {
-    background: #00FF99;
-    color: black;
-  }
-
+  <style>
+    body {
+      background: black;
+      color: #00FF99;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    a {
+      display: inline-block;
+      background: transparent;
+      border: 2px solid #00FF99;
+      color: #00FF99;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 5px;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #00FF99;
+      color: black;
+    }
   </style>
 </head>
 <body>
-  <h1>Bienvenue dans l'avenir</h1>
-  <p>Choisissez votre porte d’entrée :</p>
+  <h1>Bienvenue vers l'avenir</h1>
+  <p>La porte d’entrée ? :</p>
   
-  <button onclick="goToTheme('citoyennete')">Citoyenneté</button>
-  <button onclick="goToTheme('empouvoirement')">Empouvoirement</button>
-  <button onclick="goToTheme('numerique')">Relations</button>
-  
-  <script>
-    function goToTheme(theme) {
-      const baseURL = "https://ton-obsidian-publish.com";
-      const urls = {
-        "citoyennete": baseURL + "/citoyennete",
-        "empouvoirement": baseURL + "/empouvoirement",
-        "numerique": baseURL + "/numerique"
-      };
-      window.location.href = urls[theme] || baseURL;
-    }
-  </script>
+  <div class="button-container">
+    <a href="https://publish.obsidian.md/ouaisfieu/PROJETS/CLASSEUR/PARTICIPATION/PARTICIPATION">Citoyenneté</a>
+    <a href="https://publish.obsidian.md/ouaisfieu/PROJETS/CLASSEUR/EMPOUVOIREMENT/EMPOUVOIREMENT">Empouvoirement</a>
+    <a href="https://publish.obsidian.md/ouaisfieu/PROJETS/CLASSEUR/CAMARADERIE/CAMARADERIE">Relations</a>
+  </div>
 </body>
 </html>
